@@ -115,6 +115,9 @@ Disposable
 
 ### Update Notes
 
+**04.JUN.2021**
+* Show/Hide Button in LiveMap Widget (thanks @derrobin154)
+
 **03.JUN.2021**
 * German Translation (thanks @derrobin154)
 
