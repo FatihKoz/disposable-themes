@@ -117,7 +117,7 @@ Disposable
 
 **04.JUN.2021**
 * Show/Hide Button in LiveMap Widget (thanks @derrobin154)
-* Fixed missing DarkMode defition for LiveMap table 
+* Fixed missing DarkMode css/style defition for LiveMap table
 
 **03.JUN.2021**
 * German Translation (thanks @derrobin154)
