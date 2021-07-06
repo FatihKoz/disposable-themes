@@ -115,6 +115,10 @@ Disposable
 
 ### Update Notes
 
+**06.JUL.2021**
+* Updated theme helper functions and pireps/show.blade.php to provide solutions for vmsAcars improvements (Flaps & Speeds)
+* Improved German Translation (thanks @GAE074)
+
 **22.JUN.2021**
 * Fixed Flight Details page, in some cases it was generating an error about userbids variable (thanks @tayrael for providing info and tests)
 * Updated SimBrief Form to match Disposable Tech module update requirements
