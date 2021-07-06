@@ -92,7 +92,7 @@
                     <tr>
                       <th width="20%" nowrap="true">{{ $field->name }}</th>
                       <td>
-                        {!! Dispo_PirepFields($field->slug,$field->value) !!}
+                        {!! Dispo_PirepFields($field->slug, $field->value, $pirep->aircraft->icao) !!}
                         @if(Dispo_Modules('DisposableTech'))
                           {!! Dispo_CheckWeights($pirep->id,$field->slug) !!}
                         @endif
@@ -109,7 +109,7 @@
                   @foreach($pirep->acars_logs->sortBy('created_at') as $log)
                     <tr>
                       <td width="20%" nowrap="true">{{ $log->created_at->format('d.M.Y H:i') }} UTC</td>
-                      <td>{{ $log->log }}</td>
+                      <td>@if(Dispo_Modules('DisposableTech')) {!! Dispo_Flaps($pirep->aircraft->icao, $log->log) !!} @else {{ $log->log }} @endif</td>
                     </tr>
                   @endforeach
                 </table>
