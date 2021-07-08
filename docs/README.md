@@ -18,7 +18,7 @@ If you do not have an image (and disposable) folder directly under your public a
 * Contents of public\assets\frontend\css folder should be placed in your phpvms public\assets\frontend\css folder.
 * Contents of public\assets\frontend\js folder should be placed in your phpvms public\assets\frontend\js folder.
 
-This is where the default stylesheet files are already placed, so you should be able to find them without any problems.  
+This is where the default stylesheet files are already placed, so you should be able to find them without any problems.
 But if you miss or skip this step, template will really look terrible and you would spot the problem in seconds.
 
 * Contents of resources\lang\en folder should be placed under your phpvms resources\lang\en folder.
@@ -30,7 +30,7 @@ But if you miss or skip this step, template will really look terrible and you wo
 "extends" : "default",    // if something goes wrong and a file is missing, this saves us and default theme is used
 "sidebar" : 0,            // SideBar (left) and NavBar (top) switch
 "utc_clock" : 1,          // UTC Clock (javascript based)
-"flight_cards" : 0,       // Display flights as cards or in a classic table style 
+"flight_cards" : 0,       // Display flights as cards or in a classic table style
 "flight_usedtypes" : 0,   // THIS SETTING IS DEPRECATED ! Core PhpVms provides a better solution.
 "flight_bid" : 1,         // Enable Bid button at flight details page
 "flight_simbrief" : 1,    // Enable Generate SimBrief OFP button at flight details page
@@ -47,16 +47,16 @@ But if you miss or skip this step, template will really look terrible and you wo
 "roster_ident" : 0,       // Show User Ident (Callsign) at roster
 "roster_ivao" : 1,        // Show IVAO ID and link to user's IVAO profile at roster
 "sbrief_ivao" : 1,        // Show IVAO Prefile button at SimBrief Briefing page
-"roster_vatsim" : 1,      // Show VATSIM ID and link to user's VATSIM profile at roster 
+"roster_vatsim" : 1,      // Show VATSIM ID and link to user's VATSIM profile at roster
 "sbrief_vatsim" : 1,      // Show VATSIM Prefile button at SimBrief Briefing page
 "roster_poscon" : 0,      // Show POSCON ID at roster
 "sbrief_poscon" : 0,      // Show POSCON Prefile button at SimBrief Briefing page
 "sbrief_fltcrw" : 1,      // Display Flight Crew names at SimBrief Briefing page
-"change_hub" : 1,         // Allow users to change their hubs (home airports) via user profile edit page 
+"change_hub" : 1,         // Allow users to change their hubs (home airports) via user profile edit page
 "change_airline" : 1,     // Allow users to change their airlines via user profile edit page
 "login_logo" : 1          // Show logo at login screen
 ```
-*Important Note: Last value of the theme.json file DOES NOT NEED a comma at the end, all others must have a comma.*
+*Important Note: Last value of the theme.json file DOES NOT NEED a comma at the end, all others must have a comma.*  
 *It is not a typo or an error in the file, it is how it should be*
 
 **Re-Styling the Theme**
@@ -81,7 +81,7 @@ If you want the links to be functional please add two profile fields (check admi
 * description : Vatsim ID or VATSIM ID (this field is displayed in the blade with the value, can be anything you wish)
 
 Do not use any spaces in the name field while creating the profile fields, that will generate an error both during display and during user registration.  
-If you already defined your profile fields, you can change their names from the admin panel or just change the profile\index.blade to reflect your settings.
+If you already defined your profile fields, you can change their names from the admin panel or just change the profile\index.blade to reflect your settings.  
 
 **vmsAcars Users and Extended Stats (needs Disposable Tools & Widgets module)**
 
@@ -94,7 +94,7 @@ All the details of your flights are by default collapsed, just click the show/hi
 **Footer Positioning and Content**
 
 If you want to have a larger footer (like 2-3 lines or images/links etc), then you need to edit the css file to give it more space 'cause to keep it really where it belongs (at the bottom of the page) I had to use some definitions for it.  
-To do this, head to the css file and go to end directly, you will find the definitions and simple explanations for footer there. 
+To do this, head to the css file and go to end directly, you will find the definitions and simple explanations for footer there.
 
 **Diffences Compared to v1 series**
 
@@ -109,11 +109,15 @@ If you encounter problems in a specific device just let me know, maybe we can fi
 
 Safe flights and enjoy,  
 Disposable  
-30.APR.21  
+30.APR.21
 
 ---
 
 ### Update Notes
+
+**08.JUL.21**
+* Italian Translation (thanks @Fabietto996)
+* Replaced an old flash message file with fixed version to prevent errors (forked from default)
 
 **06.JUL.2021**
 * Updated theme helper functions and pireps/show.blade.php to provide solutions for vmsAcars improvements (Flaps & Speeds)
@@ -160,5 +164,5 @@ Disposable
 
 ---
 
-**Developer Note:**  
+**Developer Note:**
 If you are getting "unable to locate mix file" errors in your Laravel Log, please change all occurances of `public_mix` to `public_asset` in your `app.blade.php`. Same solution may be applied to admin/app.blade.php file too.
